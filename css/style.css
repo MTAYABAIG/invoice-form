@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(156, 156, 156);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Content_Container {
+  box-sizing: border-box;
+  padding: 80px;
+  border-radius: 10px;
+  background-color: white;
+  height: fit-content;
+  min-height: auto;
+  width: 80vw;
+  margin: 25px auto;
+  min-width: fit-content;
+}
+.Logo_Side {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 50px;
+  width: fit-content;
+}
+.Logo_Contanier,
+.Logo_Bill {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 35px;
+  width: fit-content;
+}
+.Logo {
+  width: fit-content;
+  width: 96px;
+}
+.Logo_two{
+    display: none;
+    /* position: absolute; */
+}
+.Logo_Text {
+  padding-left: 40px;
+  border-left: 0.5px Solid rgb(196, 196, 196);
+  line-height: 1.4;
+}
+.Logo_text_p_one {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.Bill {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 96px;
+}
+.Bill_To {
+  font-size: 20px;
+  color: rgb(109, 109, 109);
+}
+.Logo_Section {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.Other_Side {
+  display: flex;
+  justify-content: end;
+}
+.Invoice-one {
+  font-size: 32px;
+  color: gray;
+  text-align: right;
+}
+.Logo_text_p_two {
+  font-size: 14px;
+}
+.Invoice_numver {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: left;
+}
+.invoice_p_one {
+  font-size: 14px;
+  text-align: right;
+}
+.invoice_p_two {
+  font-size: 14px;
+  text-align: left;
+}
+.Invoice_Date {
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 980px) {
+  .Content_Container {
+    padding: 50px;
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .Logo_Section {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    row-gap: 50px;
+  }
+  .Logo_Side {
+    order: 2;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Content_Container {
+    padding: 20px;
+  }
+  .Logo_Contanier,
+  .Logo_Bill {
+    grid-template-columns: auto;
+    row-gap: 30px;
+  }
+
+  .Logo {
+    display: grid;
+    justify-self: center;
+  }
+
+  .Logo_Text {
+    padding-top: 30px;
+    border-top: 0.5px Solid rgb(196, 196, 196);
+    display: grid;
+    text-align: inherit;
+  }
+  .Other_Side {
+    margin-top: 20px;
+  }
+  .full_th {
+    width: 25vw;
+    }
+    .th_next{
+        width: 100px;
+    }
+.Logo {
+display: none;
+}
+.Logo_two{
+    display: grid;
+    justify-items: center;
+    /* position: relative; */
+    order: 1;
+    margin: 20px 0px;
+}
+
+.Bill {
+    width: 50vw;
+    /* border: 2px Solid; */
+    font-weight: 700;
+    color: black;
+  }
+  
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+.Table_Content {
+  margin: 60px auto;
+}
+table {
+  /* font-family: arial, sans-serif; */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  /* border: 1px solid #dddddd; */
+  text-align: left;
+  /* font */
+  padding: 8px 0px;
+}
+
+.full_th {
+  width: 40vw;
+  /* font-weight: 600; */
+  font-size: 14px;
+  color: #949494;
+  /* padding-left: 23px; */
+}
+.th_next {
+    font-size: 14px;
+    color: #a6a4a4;
+    text-align: end;
+  /* padding-left: 23px; */
+}
+/* Tabel Head */
+
+.Table_Content > table:nth-child(1) > thead:nth-child(1) > tr:nth-child(1) {
+    border-bottom: 1px solid rgb(196, 196, 196);
+    display: table-row;
+  }
+  
+.th_p_one{
+    font-size: 16px;
+    font-weight: 600;
+    color: #353535;;
+}
+.th_p_two{
+    font-size: 13px;
+    
+    color: #919191;;
+    font-weight: 600 !important;
+}
+.th_p_three{
+    font-weight: 600;
+    text-align: right;
+    color: #353535;;
+
+}
+.gen_pad{
+    padding: 7px 0px;
+}
+.gen_padding{
+    padding: 15px 0px;
+}
+.table_body_content{
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+.Table_Result{
+    display: table-row;
+
+}
+.Table_th{
+    width: 50%;
+    font-weight: 600;
+    color: #949494;}
+th.Table_th:nth-child(2) {
+    text-align: right;
+    }
+.Table_total{
+    width: 50%;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+}
+.Table_final{
+    width: 50%;
+    font-size: 22px;
+    text-align: right;
+    font-weight: 600;
+    color: rgb(44, 44, 44);
+
+}
